@@ -13,7 +13,7 @@
         "h4cc/phpqatools": "dev-master",
         "phploc/phploc": "2.0.2",
         "sebastian/phpcpd": "2.0.1",
-	"monolog/monolog": "1.9.0",
+	"monolog/monolog": "1.13.0",
         "phpdocumentor/phpdocumentor": "v2.0.1",
         "mayflower/php-codebrowser": "1.1.0-beta1",
         "pear/console_commandline": "dev-trunk",
