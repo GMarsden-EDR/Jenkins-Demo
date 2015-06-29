@@ -1,7 +1,5 @@
 <?php
-
 return array(
-
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -12,9 +10,7 @@ return array(
 	| application. If disabled, a simple generic error page is shown.
 	|
 	*/
-
 	'debug' => true,
-
 	/*
 	|--------------------------------------------------------------------------
 	| Application URL
@@ -25,9 +21,7 @@ return array(
 	| your application so that it is used when running Artisan tasks.
 	|
 	*/
-
 	'url' => 'http://localhost',
-
 	/*
 	|--------------------------------------------------------------------------
 	| Application Timezone
@@ -38,9 +32,7 @@ return array(
 	| ahead and set this to a sensible default for you out of the box.
 	|
 	*/
-
 	'timezone' => 'UTC',
-
 	/*
 	|--------------------------------------------------------------------------
 	| Application Locale Configuration
@@ -51,9 +43,7 @@ return array(
 	| to any of the locales which will be supported by the application.
 	|
 	*/
-
 	'locale' => 'en',
-
 	/*
 	|--------------------------------------------------------------------------
 	| Encryption Key
@@ -64,9 +54,7 @@ return array(
 	| will not be safe. Please do this before deploying an application!
 	|
 	*/
-
 	'key' => 'YourSecretKey!!!',
-
 	/*
 	|--------------------------------------------------------------------------
 	| Autoloaded Service Providers
@@ -77,15 +65,12 @@ return array(
 	| this array to grant expanded functionality to your applications.
 	|
 	*/
-
 	'providers' => array(
-
 		'Illuminate\Foundation\Providers\ArtisanServiceProvider',
 		'Illuminate\Auth\AuthServiceProvider',
 		'Illuminate\Cache\CacheServiceProvider',
-		'Illuminate\Foundation\Providers\CommandCreatorServiceProvider',
 		'Illuminate\Session\CommandsServiceProvider',
-		'Illuminate\Foundation\Providers\ComposerServiceProvider',
+		'Illuminate\Foundation\Providers\ConsoleSupportServiceProvider',
 		'Illuminate\Routing\ControllerServiceProvider',
 		'Illuminate\Cookie\CookieServiceProvider',
 		'Illuminate\Database\DatabaseServiceProvider',
@@ -93,29 +78,21 @@ return array(
 		'Illuminate\Filesystem\FilesystemServiceProvider',
 		'Illuminate\Hashing\HashServiceProvider',
 		'Illuminate\Html\HtmlServiceProvider',
-		'Illuminate\Foundation\Providers\KeyGeneratorServiceProvider',
 		'Illuminate\Log\LogServiceProvider',
 		'Illuminate\Mail\MailServiceProvider',
-		'Illuminate\Foundation\Providers\MaintenanceServiceProvider',
 		'Illuminate\Database\MigrationServiceProvider',
-		'Illuminate\Foundation\Providers\OptimizeServiceProvider',
 		'Illuminate\Pagination\PaginationServiceProvider',
-		'Illuminate\Foundation\Providers\PublisherServiceProvider',
 		'Illuminate\Queue\QueueServiceProvider',
 		'Illuminate\Redis\RedisServiceProvider',
+		'Illuminate\Remote\RemoteServiceProvider',
 		'Illuminate\Auth\Reminders\ReminderServiceProvider',
-		'Illuminate\Foundation\Providers\RouteListServiceProvider',
 		'Illuminate\Database\SeedServiceProvider',
-		'Illuminate\Foundation\Providers\ServerServiceProvider',
 		'Illuminate\Session\SessionServiceProvider',
-		'Illuminate\Foundation\Providers\TinkerServiceProvider',
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-
 	),
-
 	/*
 	|--------------------------------------------------------------------------
 	| Service Provider Manifest
@@ -126,9 +103,7 @@ return array(
 	| list of all of the services. Here, you may set its storage spot.
 	|
 	*/
-
 	'manifest' => storage_path().'/meta',
-
 	/*
 	|--------------------------------------------------------------------------
 	| Class Aliases
@@ -139,9 +114,7 @@ return array(
 	| the aliases are "lazy" loaded so they don't hinder performance.
 	|
 	*/
-
 	'aliases' => array(
-
 		'App'             => 'Illuminate\Support\Facades\App',
 		'Artisan'         => 'Illuminate\Support\Facades\Artisan',
 		'Auth'            => 'Illuminate\Support\Facades\Auth',
@@ -149,7 +122,7 @@ return array(
 		'Cache'           => 'Illuminate\Support\Facades\Cache',
 		'ClassLoader'     => 'Illuminate\Support\ClassLoader',
 		'Config'          => 'Illuminate\Support\Facades\Config',
-		'Controller'      => 'Illuminate\Routing\Controllers\Controller',
+		'Controller'      => 'Illuminate\Routing\Controller',
 		'Cookie'          => 'Illuminate\Support\Facades\Cookie',
 		'Crypt'           => 'Illuminate\Support\Facades\Crypt',
 		'DB'              => 'Illuminate\Support\Facades\DB',
@@ -174,11 +147,10 @@ return array(
 		'Schema'          => 'Illuminate\Support\Facades\Schema',
 		'Seeder'          => 'Illuminate\Database\Seeder',
 		'Session'         => 'Illuminate\Support\Facades\Session',
+		'SSH'             => 'Illuminate\Support\Facades\SSH',
 		'Str'             => 'Illuminate\Support\Str',
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-
 	),
-
 );
